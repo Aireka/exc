@@ -1,0 +1,11 @@
+function remove(str) {
+    var str = "abbcdcefgh";
+    var newStr = '';
+    var len = str.length;
+    for (var i = 0; i < len; i++) {
+        if (newStr.indexOf(str[i]) === -1) {
+            newStr = newStr + str[i];
+        }
+    }
+   console.log(newStr);
+}
