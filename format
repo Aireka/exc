@@ -1,0 +1,14 @@
+function format(num){  
+  num = String(num);
+  let str = '';
+  for (let i = num.length- 1, j = 1; i >= 0; i--, j++){  
+      if (j%3 == 0 && i != 0){ 
+          str += num[i] + ',';
+          continue;  
+      }  
+      str += num[i];
+  }  
+  return str.split('').reverse().join("");
+} 
+let num = 2384235232;
+format(num);
